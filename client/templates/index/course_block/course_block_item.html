@@ -1,0 +1,15 @@
+<template name="courseBlockItem">
+<div class="card" id="course_block">
+        <div class="card-image waves-effect waves-block waves-light" style="height:70%;width:100%;">
+          <img class="activator" src="/upload/{{course_id}}.jpg" >
+        </div>
+        <div class="card-content" style="height:30%; background-color:#FFFFFF;">
+          <span class="card-title activator grey-text text-darken-4">{{course_name}}<i class="mdi-navigation-more-vert right"></i> <a href="/course/{{course_id}}">  Enter</a></span>
+          <p></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">{{course_name}} <a href="/course/{{course_id}}">  Enter</a><i class="mdi-navigation-close right"></i></span>
+          <p>{{course_introduce}}</p>
+        </div>
+</div>
+</template>

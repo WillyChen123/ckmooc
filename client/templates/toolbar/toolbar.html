@@ -10,11 +10,22 @@
 		Snoopy
 	</div>	
 	<div id="logout_button">
-		Louout
+		{{#if currentUser}} 
+		<a href="#login" style="width: 100% ; height:100%" class="btn btn-primary col-xs-12 col-sm-12" id="login-buttons-password,logout_button" type="button">
+				Sign out
+		</a>
+		{{else}}
+		<a href="#login" style="width: 100% ; height:100%" class="btn btn-primary col-xs-12 col-sm-12" id="login-buttons-password,logout_button" type="button">
+				Sign in
+		</a>
+		{{/if}}
 	</div>
 	<div id="setting_button">
-		Setting
+		<a href="{{pathFor 'adminSetting'}}" style="width: 100% ; height:100%" class="btn btn-primary col-xs-12 col-sm-12" type="button">
+				Admin
+		</a>
 	</div>
 </div>
+
 
 </template>
