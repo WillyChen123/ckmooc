@@ -1,0 +1,15 @@
+<template name='navbar'>
+<nav>
+    <div class="nav-wrapper" style='height:94%;'>
+      <a href="/" class="brand-logo">CK MOOC</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="/adminSetting">Admin</a></li>
+        {{#if currentUser}} 
+        <li><a href="#login">Signout</a></li>
+        {{else}}
+        <li><a href="#login">Signin</a></li>
+        {{/if}}
+      </ul>
+    </div>
+  </nav>
+</template>

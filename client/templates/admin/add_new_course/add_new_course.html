@@ -1,7 +1,6 @@
 <template name="addNewCourse">
 <div align="center">
-<div id="add_new_course_outside">
-<div id="add_new_course_inside">
+<div  style='width:50%;'>
 <h4>New Course</h4>
 <form class="col s12">
    <label>Course Tag</label>
@@ -11,39 +10,30 @@
       <option value="{{tag_name}}">{{tag_name}}</option>
       {{/each}}
     </select>
-	<div class="row">
         <div class="input-field col s12">
           <i class="mdi-action-account-circle prefix"></i>
           <input id="icon_prefix" type="text" class="validate" name="course_name">
           <label for="icon_prefix">Course Name</label>
       </div>
-  	</div>
-  	<div class="row">
         <div class="input-field col s12">
           <i class="mdi-action-account-circle prefix"></i>
           <input id="icon_prefix" type="text" class="validate" name="course_id">
            <label for="icon_prefix">Course ID</label>
         </div>        
-  	</div>
-    <div class="row">
         <div class="input-field col s12">
           <i class="mdi-action-account-circle prefix"></i>
           <input id="icon_prefix" type="text" class="validate" name="course_sample">
            <label for="icon_prefix">Course Sample Video</label>
-        </div>        
-    </div>
-  	<div class="row">
+        </div> 
         <div class="input-field col s12">
           <textarea id="textarea1" class="materialize-textarea" name="course_introduce"></textarea>
           <label for="textarea1">Course Introduce</label>
-        </div>     
-  	</div>
+        </div> 
         <div class="input-field col s12">
           {{> upload_bootstrap fileTypes='.jpg'}}
         </div>   
 	<input type="submit" value="Submit" class="btn btn-primary">
 </form>
-</div>
 </div>
 </div>
 </template>

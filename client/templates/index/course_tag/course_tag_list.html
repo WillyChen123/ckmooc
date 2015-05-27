@@ -1,6 +1,8 @@
 <template name="courseTagList">
-<h4><a href="/">All</a></h4>
+	<ul id="nav-mobile"  class="side-nav fixed" style='top:10%;'>
+        <li class="bold"><a href="/" class="waves-effect waves-teal">All</a></li>        
 {{#each course_tags}}
 	{{> courseTagItem}}
 {{/each}}
+</ul>
 </template>
