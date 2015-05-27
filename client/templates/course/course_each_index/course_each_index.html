@@ -1,16 +1,18 @@
 <template name="courseEachIndex">
-<div align='center' id="course_introduce">
-	{{>courseEachIntroduce}}
-</div>
+<div>
+	<div class="row">
+		<div class="orange lighten-1 col s12 m4 l3 course_introduce">
+			{{>courseEachIntroduce}}
+			{{>courseEachInstructor}}
+		</div>
 
-<div id="course_outside_list">
-	<div id="course_inside_list">
-		{{>courseEachList}}
+		<div class="blue lighten-3 col s12 m4 l6 course_content">
+			{{>courseEachVideo}}
+		</div>
+
+		<div class="orange lighten-1 col s12 m4 l3 author_introduce">
+			{{>courseEachList}}
+		</div>
 	</div>
 </div>
-
-<div align='center' id="course_instructor">
-	{{>courseEachInstructor}}
-</div>
-
 </template>

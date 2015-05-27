@@ -1,9 +1,15 @@
 <template name="addNewVideo">
 <div align="center">
-<div id="add_new_course" align="center">
+<div id="add_new_video" align="center">
 <h4>New Video</h4>
 <form>
-	<input name="course_id" type='text' value="" placeholder='Course ID'>
+	<label>Course ID</label>
+    <select class="browser-default" name="course_id">
+      <option value="" disabled selected>Choose Course ID</option>
+      {{#each course_ids}}
+      <option value="{{course_id}}">{{course_id}}</option>
+      {{/each}}
+    </select>
 	<input name="chapter" type='text' value="" placeholder='Chapter'>
 	<input name="video_name" type='text' value="" placeholder='Video Name'>
 	<input name="video_url" type='text' value="" placeholder='Video URL'>

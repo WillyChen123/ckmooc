@@ -10,8 +10,11 @@ Template.addNewCourse.events({
     e.preventDefault();
 
     var course = {
+      course_tag: $(e.target).find('[name=course_tag]').val(),
       course_name: $(e.target).find('[name=course_name]').val(),
-      course_id: $(e.target).find('[name=course_id]').val()
+      course_id: $(e.target).find('[name=course_id]').val(),
+      course_introduce: $(e.target).find('[name=course_introduce]').val(),
+      course_sample: $(e.target).find('[name=course_sample]').val(),
     };
 
     var stop=false;

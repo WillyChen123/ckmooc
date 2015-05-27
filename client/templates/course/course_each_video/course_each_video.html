@@ -1,0 +1,8 @@
+<template name="courseEachVideo">
+	{{#if video}}
+	<h1>{{video_name.video_name}}</h1>
+	<iframe width="100%" height="400" src="https://www.youtube.com/embed/{{video}}?autoplay=1" frameborder="0" allowfullscreen></iframe>	
+	{{else}}
+	<h1>Choose a Video</h1>
+	{{/if}}
+</template>

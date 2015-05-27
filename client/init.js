@@ -1,3 +1,5 @@
+UploadServer=''
+
 Meteor.startup(function () {
   UploadServer.init({
     tmpDir: '/upload/tmp',

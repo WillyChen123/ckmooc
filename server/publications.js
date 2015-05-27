@@ -9,3 +9,7 @@ Meteor.publish('tags',function(){
 Meteor.publish('videos',function(){
 	return Videos.find();
 }); 
+
+Meteor.publish('authors',function(){
+	return Authors.find();
+}); 
