@@ -124,6 +124,26 @@ body{
   left: 0%;
   width: 25%;
   height: 70%;
+  overflow-y:visible;
+}
+
+
+#course_tag_inside{
+  width: 105%;
+  height: 100%;
+  overflow-x:hidden;
+  overflow-y:scroll;
+
+}
+
+#add_new_course_outside{
+  position: absolute;
+  left: 40%;
+  width: 30%;
+  height: 94%;
+  overflow-x:hidden;
+  overflow-y:hidden;
+
 }
 
 #course_choose{
@@ -179,3 +199,17 @@ body{
 
 }
 
+#course_each_introduce{
+  height: 91vh;
+  overflow-y:auto;
+}
+
+#course_each_video{
+  height: 91vh;
+  overflow-y:auto;
+}
+
+#course_each_list{
+  height: 91vh;
+  overflow-y:auto;
+}

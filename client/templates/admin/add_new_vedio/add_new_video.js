@@ -21,6 +21,11 @@ Template.addNewVideo.events({
       	stop=true;
       }
 
+      if(result.postExists){
+        alert('This video has add.');
+        stop=true;
+      }
+
       if (stop===false){
       Router.go('adminSetting');
   	}
