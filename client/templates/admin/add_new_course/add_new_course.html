@@ -11,27 +11,24 @@
       {{/each}}
     </select>
         <div class="input-field col s12">
-          <i class="mdi-action-account-circle prefix"></i>
+          <i class="mdi-content-create prefix"></i>
           <input id="icon_prefix" type="text" class="validate" name="course_name">
           <label for="icon_prefix">Course Name</label>
       </div>
         <div class="input-field col s12">
-          <i class="mdi-action-account-circle prefix"></i>
+          <i class="mdi-editor-format-color-text prefix"></i>
           <input id="icon_prefix" type="text" class="validate" name="course_id">
            <label for="icon_prefix">Course ID</label>
         </div>        
         <div class="input-field col s12">
-          <i class="mdi-action-account-circle prefix"></i>
+          <i class="mdi-editor-insert-link prefix"></i>
           <input id="icon_prefix" type="text" class="validate" name="course_sample">
            <label for="icon_prefix">Course Sample Video</label>
         </div> 
         <div class="input-field col s12">
-          <textarea id="textarea1" class="materialize-textarea" name="course_introduce"></textarea>
-          <label for="textarea1">Course Introduce</label>
+          <textarea id="textarea1" class="materialize-textarea " name="course_introduce"></textarea>
+          <label for="textarea1">Course Introduction</label>
         </div> 
-        <div class="input-field col s12">
-          {{> upload_bootstrap fileTypes='.jpg'}}
-        </div>   
 	<input type="submit" value="Submit" class="btn btn-primary">
 </form>
 </div>

@@ -1,0 +1,24 @@
+<template name='deleteCourse'>
+<div align="center">
+<div  style='width:50%;'>
+
+<h4>Delete Course</h4>
+<form>
+	<div class='row'>
+	<label>Choose Course</label>
+    <select class="browser-default" name="course_id">
+      <option value="" disabled selected>Choose Course</option>
+      {{#each courses}}
+      <option value="{{course_id}}">{{course_id}}&nbsp;-&nbsp;{{course_name}}</option>
+      {{/each}}
+    </select>
+	</div>
+
+    <input type="submit" value="Delete" class="btn btn-primary">
+
+
+</form>
+
+</div>
+</div>
+</template>

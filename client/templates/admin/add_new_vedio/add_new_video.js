@@ -16,13 +16,25 @@ Template.addNewVideo.events({
         stop=true;
        }
 
-      if(result.nothing){
-      	alert('Please Enter something.');
+      if(result.no_course_id){
+      	alert('Please Choose Course ID.');
       	stop=true;
+      }
+      if(result.no_chapter){
+        alert('Please Enter Chapter.');
+        stop=true;
+      }
+      if(result.no_video_name){
+        alert('Please Enter Video Name.');
+        stop=true;
+      }
+      if(result.no_video_url){
+        alert('Please Enter Video URL.');
+        stop=true;
       }
 
       if(result.postExists){
-        alert('This video has add.');
+        alert('This Video URL has already been created.');
         stop=true;
       }
 

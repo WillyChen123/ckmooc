@@ -1,0 +1,22 @@
+<template name='deleteVideo'>
+<div align="center">
+<div  style='width:50%;'>
+
+<form class='course'>
+  <div class='row'>
+  <label>Choose Video</label>
+    <select class="browser-default" name="video_id">
+      <option value="" disabled selected>Choose Video</option>
+      {{#each videos}}
+      <option value="{{video_url}}">{{video_name}}</option>
+      {{/each}}
+    </select>
+  </div>
+
+    <input type="submit" value="Delete" class="btn btn-primary">
+
+
+</form>
+</div>
+</div>
+</template>

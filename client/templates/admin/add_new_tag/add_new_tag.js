@@ -13,13 +13,13 @@ Template.addNewTag.events({
         stop=true;
        }
       if (result.postExists){
-        alert('This link has already been posted.');
+        alert('This Tag has already been created.');
         stop=true;
     }
 
 
-      if(result.nothing){
-      	alert('Please Enter something.');
+      if(result.no_tag_name){
+      	alert('Please Enter Tag Name.');
       	stop=true;
       }
 

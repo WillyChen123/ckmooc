@@ -24,14 +24,30 @@ Template.addNewCourse.events({
         stop=true;
        }
       if (result.postExists){
-        alert('This link has already been posted.');
+        alert('This course ID has already been created.');
         stop=true;
-    }
+      }
 
 
-      if(result.nothing){
-      	alert('Please Enter something.');
+      if(result.no_course_tag){
+      	alert('Please Choose Course Tag.');
       	stop=true;
+      }
+      if(result.no_course_name){
+        alert('Please Enter Course name.');
+        stop=true;
+      }
+      if(result.no_course_id){
+        alert('Please Enter Course ID.');
+        stop=true;
+      }
+      if(result.no_course_introduce){
+        alert('Please Enter Course Introduction.');
+        stop=true;
+      }
+      if(result.no_course_sample){
+        alert('Please Enter Course Sample Video.');
+        stop=true;
       }
 
       if (stop===false){

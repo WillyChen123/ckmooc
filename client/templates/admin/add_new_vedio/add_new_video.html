@@ -7,13 +7,25 @@
     <select class="browser-default" name="course_id">
       <option value="" disabled selected>Choose Course ID</option>
       {{#each course_ids}}
-      <option value="{{course_id}}">{{course_id}}</option>
+      <option value="{{course_id}}">{{course_id}}&nbsp;-&nbsp;{{course_name}}</option>
       {{/each}}
     </select>
-	<input name="chapter" type='text' value="" placeholder='Chapter'>
-	<input name="video_name" type='text' value="" placeholder='Video Name'>
-	<input name="video_url" type='text' value="" placeholder='Video URL'>
-	<input type="submit" value="Submit" class="btn btn-primary">
+  <div class="input-field col s12">
+      <i class="mdi-device-storage prefix"></i>
+      <input id="icon_prefix" type="text" class="validate" name="chapter">
+      <label for="icon_prefix">Chapter</label>
+  </div>
+  <div class="input-field col s12">
+      <i class="mdi-editor-format-color-text prefix"></i>
+      <input id="icon_prefix" type="text" class="validate" name="video_name">
+      <label for="icon_prefix">Video Name</label>
+  </div>
+  <div class="input-field col s12">
+      <i class="mdi-editor-insert-link prefix"></i>
+      <input id="icon_prefix" type="text" class="validate" name="video_url">
+      <label for="icon_prefix">Video URL</label>
+  </div>
+  <input type="submit" value="Submit" class="btn btn-primary">
 </form>
 </div>
 </div>

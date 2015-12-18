@@ -15,7 +15,7 @@ Template.authorIntroduce.events({
        }
 
       if(result.nothing){
-      	alert('Please Enter something.');
+      	alert('Please Enter Name and Introduction.');
       	stop=true;
       }
 
